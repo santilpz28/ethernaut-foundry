@@ -12,6 +12,17 @@
 
 </div>
 
+
+---
+
+<p align="center">
+  <img src="docs/architecture.png" alt="How the 31 levels are solved" width="100%">
+</p>
+
+### How the 31 levels are solved
+
+Every level is solved **through a Foundry test**, never by poking the console: the test is the reproducible proof that the exploit works. Each solution is tagged with its SWC identifier, the difficulty, the vulnerability class and the lesson, plus a link to the relevant OpenZeppelin documentation. Across the 31 levels the same families repeat — arithmetic and logic errors (`SWC-101`), access control through `tx.origin` and private storage (`SWC-105`, `SWC-106`), and reentrancy through delegatecall and the King contract (`SWC-112`, `SWC-107`) — each one demonstrated, then fixed side by side.
+
 ---
 
 ## 🎯 What is this?
